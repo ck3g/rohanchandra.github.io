@@ -9,10 +9,15 @@ hide: true
 
 Type Theme is a free and open-source [Jekyll](http://jekyllrb.com) theme, that's highly customizable and built for blogging.
 
-[Demo](https://rohanchandra.github.io/type-theme/)
+<a href="https://rohanchandra.github.io/type-theme/" class="button">Demo</a>
+<a href="https://github.com/rohanchandra/type-theme" class="button">View on Github</a>
+<a href="https://github.com/rohanchandra/type-theme/archive/master.zip" class="button">Download (ZIP)</a>
 
 
 ## Getting Started
+
+To use Type Theme with Jekyll:
+
 1. [Install Jekyll](http://jekyllrb.com/docs/installation/), using `gem install jekyll`
 2. Fork and clone the [Type Theme repo](https://github.com/rohanchandra/type-theme) **or** use the [Download ZIP](https://github.com/rohanchandra/type-theme/archive/master.zip) option on Github.com
 3. Customize the theme

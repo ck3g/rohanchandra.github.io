@@ -7,7 +7,7 @@ hide: true
 
 ![Default Type Theme blog](https://cloud.githubusercontent.com/assets/816965/5142407/19742e48-71d6-11e4-8d9d-fdfe010784f0.png)
 
-Type Theme is a free and open-source [Jekyll](http://jekyllrb.com) theme, that's highly customizable and built for blogging.
+A free and open-source [Jekyll](http://jekyllrb.com) theme. Great for blogs and easy to customize.
 
 <a href="https://rohanchandra.github.io/type-theme/" class="button">Demo</a>
 <a href="https://github.com/rohanchandra/type-theme" class="button">View on Github</a>
@@ -19,63 +19,113 @@ Type Theme is a free and open-source [Jekyll](http://jekyllrb.com) theme, that's
 To use Type Theme with Jekyll:
 
 1. [Install Jekyll](http://jekyllrb.com/docs/installation/), using `gem install jekyll`
-2. Fork and clone the [Type Theme repo](https://github.com/rohanchandra/type-theme) **or** use the [Download ZIP](https://github.com/rohanchandra/type-theme/archive/master.zip) option on Github.com
-3. Customize the theme
+2. Fork the [Type Theme repo](https://github.com/rohanchandra/type-theme) **or**  [download as a ZIP file](https://github.com/rohanchandra/type-theme/archive/master.zip)
+3. Customize the theme (see below)
 4. Run the Jekyll server using `jekyll serve`
 5. Visit [http://localhost:4000](http://localhost:4000) to view the site
 
 ## Customizing Type Theme
 
-### _config.yml
-Open `_config.yml` in a text editor to change most of the blog's settings. Below is a summary of the configuration options.
+Open `_config.yml` in a text editor to change most of the blog's settings.
 
-**Meta**
+If a variable in this document is marked as "optional", disable the feature by removing all text from the variable. For example, to prevent the avatar from rendering in the header, the avatar line should read:
 
-Basic information about your Jekyll site which will be used throughout the site and as meta properties for search engines, browsers, and the site's RSS feed.
+<pre>
+theme:
+  title: Type Theme
+  avatar:  
+  gravatar: 
+</pre>
 
-**Header and footer text** 
+Notice the avatar variable is left intentionally blank. 
 
-The header text is a large description, only shown at the top of the index page of your site, with a separate text and background color.
+Below is a summary of the configuration options in Type Theme.
 
-Both header and footer text support the use of HTML tags.
+### Site configuration
+The most common configurations, included here for guidance, are:
 
-Removing all text either variable in the `_config.yml` file will hide the feature.
+Jekyll website *without* a subpath (like this website):
+<pre>
+# SITE CONFIGURATION
+baseurl: ""
+url: "https://username.github.io"
+</pre>
 
-**Icons**
+Jekyll website *with* subpath (like the Type Theme demo page):
+<pre>
+# SITE CONFIGURATION
+baseurl: "/sub-directory"
+url: "https://username.github.io/"
+</pre>
 
-Add your username on selected websites in the icon section of the `_config.yml` file to display the site's icon from [Font Awesome](https://fortawesome.github.io/Font-Awesome/) in the header navigation.
+Please configure this in `_config.yml` before using the theme.
 
-In the `_config.yml` file, all social network usernames should be enclosed in quotes (e.g. "username"), except for LinkedIn and Stack Exchange which require a full URL.
+### Meta
 
-The RSS variable takes a boolean value, i.e. `true` to display the icon or `false` to remove the icon.
+Meta variables hold basic information about your Jekyll site which will be used throughout the site and as meta properties for search engines, browsers, and the site's RSS feed.
 
-**Scripts**
+Change these variables in `_config.yml`: 
+
+Variable | Example | Description | Optional
+-|-|-|
+title | My Jekyll Blog | Name of website | Yes
+avatar | avatar.png | Name of avatar image in the `/img` directory, to be displayed in the theme's header | Yes
+gravatar |   | Email MD5 hash, to be displayed in the theme's header | Yes
+description | My blog posts  | Short description, primarily used by search engines | Yes
+
+### Header and footer text
+
+Change these variables in `_config.yml`: 
+
+Variable | Example | Description | Optional
+-|-|-|
+header_text | Welcome to my Jekyll blog | HTML (shown below the navigation) with a background colour for emphasis | Yes
+footer_text | Copyright 2014 | HTML (shown at end of the site) with lighter text | Yes
+
+### Icons
+
+Add your username on selected websites in the icon section of the `_config.yml` file to display the site's icon from [Font Awesome](https://fortawesome.github.io/Font-Awesome/) in the header navigation. All icon variables should be your username enclosed in quotes (e.g. "username"), except for the following variables:
+
+Variable | Example | Description | Optional
+-|-|-|
+rss | true | Takes boolean value (true/false) to show RSS feed icon | Yes
+email_address | type@example.com | Email address |  Yes
+linkedin | https://www.linkedin.com/in/FirstLast | Full URL to profile on LinkedIn | Yes
+stack_exchange | https://stackoverflow.com/users/0000/first-last | Full URL to profile on Stack Exchange | Yes
+
+### Scripts
+
+Change these variables in `_config.yml`: 
+
+Variable | Example | Description | Optional
+-|-|-|
+google_analytics | UA-123456-01 | Google Analytics [tracking ID](https://support.google.com/analytics/answer/1032385?hl=en) | Yes
+disqus_shortname | shortname | Disqus [shortname](https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-)|  Yes
 
 Scripts listed here are only loaded if you provide a value in the `_config.yml` file.
 
-Google Analytics requires a [tracking ID](https://support.google.com/analytics/answer/1032385?hl=en), which is in the form of `UA-000000-01`.
+### Localization strings
 
-A [Disqus shortname](https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-) is required to enable the comments script. 
-
-**Localization strings** 
+Change localization string variables in `_config.yml`.
 
 English text used in the theme (such as the "continue reading" label) has been grouped  so you can quickly translate the theme or change labels to suit your needs.
-
+  
 ### Colors, typography, padding
 
 ![A selection of colors set in Type Theme by modifying the CSS](https://cloud.githubusercontent.com/assets/816965/5142488/130869a6-71d7-11e4-8a38-a69ec1673436.png)
 
 Navigate to the `_sass > base` directory and open `_variables.scss` to change colors, typography and padding used in the theme with CSS.
 
-### Images
-Change your avatar, which is shown in the theme's header, by adding the `avatar.png` file in the `/img` directory (if you're using a different file, specify the file name in `_config.yml`). Delete the file to remove the avatar from the header.
+Mozilla's [ColorPicker](https://developer.mozilla.org/en-US/docs/Web/CSS/Tools/ColorPicker_Tool) is a helpful tool to get your preferred colours in hexadecimal or RGBA form for use in `_variables.scss`.
+
+### Favicon
 
 To change your favicon, usually displayed in the browser, place an ICO file named `favicon.ico` in the root directory of your blog.
 
-## Writing with Type Theme
+## Posts and pages in Type Theme
 [Jeykll docs for writing posts](http://jekyllrb.com/docs/posts/).
 
-**Feature images**
+### Feature images
 
 ![Posts with geometric feature images](https://cloud.githubusercontent.com/assets/816965/5142406/19726478-71d6-11e4-8111-94f788b0e44d.png)
 
@@ -90,9 +140,9 @@ For example:
 	---
 
 
-**Hide pages from navigation**
+### Hiding pages from navigation
 
-In the Front Matter of a page, add `hide: true` to prevent the page from showing up in the header's navigation bar (readers can still visit the URL through other means).
+In the Front Matter of a page, add `hide: true` to prevent the page from showing up in the header's navigation bar (visitors can still visit the URL through other means).
 
 For example:
 
@@ -104,4 +154,4 @@ For example:
     ---
     
 ## License
-The MIT License (MIT)
+[The MIT License (MIT)](https://github.com/rohanchandra/type-theme/blob/master/LICENSE)

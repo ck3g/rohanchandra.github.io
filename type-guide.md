@@ -8,7 +8,7 @@ Use this guide if you are just getting started with Git (for forking, cloning, c
 
 ## Step 1: Get your theme running online
 
-In this step, we'll publish a theme on  [Github Pages](https://pages.github.com/) which allows free hosting from Github repositories and runs Jekyll.
+In this step, we'll publish a blog on [Github Pages](https://pages.github.com/) which allows free hosting from Github repositories and runs Jekyll.
 
 First, visit the [Type Theme repository](https://github.com/rohanchandra/type-theme) on Github, and use the "fork" button to create your own copy of the theme.
 

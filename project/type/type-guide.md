@@ -1,10 +1,10 @@
 ---
 layout: page
 title: "Using Type Theme with Github Pages"
-permalink: /project/type/github.html
+permalink: /project/type/github/
 hide: true
 ---
-Use this guide if you are just getting started with Git (for forking, cloning, committing and pushing changes), Github Pages and/or Jekyll. If you are already familiar with these tools, instead use the [Type Theme documentation](/project/type.html#installing-type-theme).
+Use this guide if you are just getting started with Git (for forking, cloning, committing and pushing changes), Github Pages and/or Jekyll. If you are already familiar with these tools, instead use the [Type Theme documentation](/project/type#installing-type-theme).
 
 ## Step 1: Get your theme running online
 
@@ -103,4 +103,4 @@ The most important changes to make are to:
 2. update your title in `_config.yml` to rename your Jekyll blog, and to
 3. update social icons to match your own usernames.
 
-All the above changes are made by opening the `_config.yml` file in a text editor. Please visit the [Type Theme documentation](/project/type.html#customizing-type-theme) for the complete details on customising the theme with examples of configuration.
+All the above changes are made by opening the `_config.yml` file in a text editor. Please visit the [Type Theme documentation](/project/type#customizing-type-theme) for the complete details on customising the theme with examples of configuration.

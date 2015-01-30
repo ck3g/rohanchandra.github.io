@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Type Theme"
-permalink: /project/type.html
+permalink: /project/type/
 hide: true
 ---
 
@@ -16,7 +16,7 @@ A free and open-source [Jekyll](http://jekyllrb.com) theme. Great for blogs and 
 
 If you are new to Jekyll and/or Git and would like to host your Jekyll blog using Github Pages, view a detailed installation walkthrough for Type Theme at:
 
-<a href="/project/type/github.html" class="button">Using Type Theme with Github Pages</a>
+<a href="/project/type/github/" class="button">Using Type Theme with Github Pages</a>
 
 ## Installing Type Theme
 

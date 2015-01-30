@@ -45,13 +45,13 @@ To clone, in Terminal/Bash/Command Prompt type (replacing "username" with your o
 
 `git clone https://github.com/username/username.github.io.git`
 
-Alternatively, if you're using a GUI use the 'clone' feature. Here's what that process in Github for Windows after signing in and selecting the add button:
+Alternatively, if you're using a GUI, make use of the 'clone' feature. Here's what that process in Github for Windows looks like (after signing in and clicking the add button):
 
 ![Clone button in Github for Windows GUI](/img/project/type/gui-clone.png)
 
 ## Step 4: Your first post
 
-Open the `_posts` folder and make new file called "2015-01-01-my-first-post.md". Inside type the contents of your first post. In Jekyll posts are inputted with Markdown.
+Open the `_posts` folder and make new file called "2015-01-01-my-first-post.md". Inside type the contents of your first post.
 
 For example: 
 
@@ -63,6 +63,8 @@ title: My first post
 
 Just testing posts in Jekyll
 </pre>
+
+In Jekyll posts use a variant of [Markdown](http://daringfireball.net/projects/markdown/basics) for formatting of text.
 
 To see your changes locally:
 
@@ -81,7 +83,7 @@ Once you're happy with your new post, you can commit changes using Terminal/Bash
 3. Push changes to the web, by typing `git push origin master`
 4. Visit [https://username.github.io](https://username.github.io) to see your changes live
 
-Here's what steps 1 to 3 look in Github for Windows using the GUI instead:
+Here's what steps 1 to 3 look like in Github for Windows:
 
 ![Commiting changes in Github for Windows by adding title and selecting 'commit to master'](/img/project/type/gui-new-changes.png)
 
@@ -93,12 +95,12 @@ Step 3: Syncing in Github for Windows pushes changes to the repository online.
 
 ## Step 5: Customising Type Theme
 
-Now that you've got Type Theme running, know how to make posts, preview Jekyll websites locally using `jekyll serve`, and save changes using "git push" or syncing in the GUI, you'll want to make some finishing touches to customise the theme.
+Now that you've got Type Theme running, know how to make posts, can preview Jekyll websites locally using `jekyll serve`, and save changes using "git push" or syncing in the GUI, you will want to make some finishing touches to customise the theme.
 
-The most important changes to make are:
+The most important changes to make are to:
 
-1. Update the site configuration in `_config.yml` to match the URL your Jekyll website is hosted on (such as `https://username.github.io`)
-2. Update your title in `_config.yml` to rename your Jekyll blog
-3. Update social icons to match your own usernames
+1. update the site configuration in `_config.yml` to match the URL your Jekyll website is hosted on (such as `https://username.github.io`), 
+2. update your title in `_config.yml` to rename your Jekyll blog, and to
+3. update social icons to match your own usernames.
 
 All the above changes are made by opening the `_config.yml` file in a text editor. Please visit the [Type Theme documentation](/project/type.html#customizing-type-theme) for the complete details on customising the theme with examples of configuration.

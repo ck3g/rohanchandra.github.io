@@ -70,7 +70,7 @@ To see your changes locally:
 
 1. Save your new post
 2. Run the Jekyll server by typing `jekyll serve` in Terminal/Bash/Command Prompt
-3. Visit [http://localhost:4000](http://localhost:4000) in your browser view the site
+3. Visit [http://localhost:4000](http://localhost:4000) in your browser to view the site
 
 Your new post should be visible on the front page of the theme.
 

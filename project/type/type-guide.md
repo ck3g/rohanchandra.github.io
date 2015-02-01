@@ -64,7 +64,7 @@ title: My first post
 Just testing posts in Jekyll
 </pre>
 
-In Jekyll posts use a variant of [Markdown](http://daringfireball.net/projects/markdown/basics) for formatting of text.
+In Jekyll, posts use a variant of [Markdown](http://daringfireball.net/projects/markdown/basics) for formatting of text.
 
 To see your changes locally:
 

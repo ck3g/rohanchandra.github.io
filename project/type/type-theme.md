@@ -114,11 +114,11 @@ Change localization string variables in `_config.yml`.
 
 English text used in the theme (such as the "continue reading" label) has been grouped  so you can quickly translate the theme or change labels to suit your needs.
   
-### Colors, typography, padding
+### Colours, typography, padding
 
-![A selection of colors set in Type Theme by modifying the CSS](https://cloud.githubusercontent.com/assets/816965/5142488/130869a6-71d7-11e4-8a38-a69ec1673436.png)
+![A selection of colours set in Type Theme by modifying the CSS](https://cloud.githubusercontent.com/assets/816965/5142488/130869a6-71d7-11e4-8a38-a69ec1673436.png)
 
-Navigate to the `_sass > base` directory and open `_variables.scss` to change colors, typography and padding used in the theme with CSS.
+Navigate to the `_sass > base` directory and open `_variables.scss` to change colours, typography and padding used in the theme with CSS.
 
 Mozilla's [ColorPicker](https://developer.mozilla.org/en-US/docs/Web/CSS/Tools/ColorPicker_Tool) is a helpful tool to get your preferred colours in hexadecimal or RGBA form for use in `_variables.scss`.
 

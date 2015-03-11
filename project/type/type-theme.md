@@ -105,6 +105,7 @@ Variable | Example | Description | Optional
 -|-|-|
 google_analytics | UA-123456-01 | Google Analytics [tracking ID](https://support.google.com/analytics/answer/1032385?hl=en) | Yes
 disqus_shortname | shortname | Disqus [shortname](https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-)|  Yes
+katex | true | Takes boolean value (true/false) to conditionally load [KaTeX](https://khan.github.io/KaTeX/) required for math typesetting
 
 Scripts listed here are only loaded if you provide a value in the `_config.yml` file.
 
@@ -128,6 +129,18 @@ To change your favicon, usually displayed in the browser, place an ICO file name
 
 ## Posts and pages in Type Theme
 [Jeykll docs for writing posts](http://jekyllrb.com/docs/posts/).
+
+### Math blocks
+Wrap math with `$$` signs in your posts and make sure you have set the `katex` variable in `_config.yml` to `true` for math typesetting.
+
+For example, in your post, add:
+
+	$$
+	  \bar{y} = {1 \over n} \sum_{i = 1}^{n}y_i
+	$$
+
+
+Visit the Kramdown syntax page for more [information on using LaTeX](http://kramdown.gettalong.org/syntax.html#math-blocks). Type Theme makes use for [KaTeX](https://khan.github.io/KaTeX/) for typesetting.
 
 ### Feature images
 

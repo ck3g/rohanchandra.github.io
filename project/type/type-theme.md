@@ -130,7 +130,7 @@ To change your favicon, usually displayed in the browser, place an ICO file name
 ## Posts and pages in Type Theme
 [Jeykll docs for writing posts](http://jekyllrb.com/docs/posts/).
 
-### Math blocks
+### Math typesetting
 Wrap math expressions with `$$` signs in your posts and make sure you have set the `katex` variable in `_config.yml` to `true` for math typesetting.
 
 For inline math typesetting, type your math expression on the *same line* as your content. For example:

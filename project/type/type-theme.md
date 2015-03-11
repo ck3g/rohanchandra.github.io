@@ -25,7 +25,7 @@ If you are familiar with Jekyll and Git, to use Type Theme with Jekyll:
 1. [Install Jekyll](http://jekyllrb.com/docs/installation/), using `gem install jekyll`
 2. Fork and clone the [Type Theme repo](https://github.com/rohanchandra/type-theme)
 3. Customize the theme
-4. Run the Jekyll server using `jekyll serve`
+4. Run the Jekyll server, using `jekyll serve`
 5. Visit [http://localhost:4000](http://localhost:4000) to view the site
 
 ## Customizing Type Theme
@@ -105,7 +105,7 @@ Variable | Example | Description | Optional
 -|-|-|
 google_analytics | UA-123456-01 | Google Analytics [tracking ID](https://support.google.com/analytics/answer/1032385?hl=en) | Yes
 disqus_shortname | shortname | Disqus [shortname](https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-)|  Yes
-katex | true | Takes boolean value (true/false) to conditionally load [KaTeX](https://khan.github.io/KaTeX/) required for math typesetting
+katex | true | Takes boolean value (true/false) to conditionally load [KaTeX](https://khan.github.io/KaTeX/) scripts required for math typesetting
 
 Scripts listed here are only loaded if you provide a value in the `_config.yml` file.
 
@@ -133,11 +133,11 @@ To change your favicon, usually displayed in the browser, place an ICO file name
 ### Math blocks
 Wrap math expressions with `$$` signs in your posts and make sure you have set the `katex` variable in `_config.yml` to `true` for math typesetting.
 
-For inline math typesetting, on the *same line* as your content, type your math expression. For example:
+For inline math typesetting, type your math expression on the *same line* as your content. For example:
     
     Type math within a sentence $$2x^2 + x + c$$ to display inline
     
-For display math typesetting, on a *new line*, type your math expression. For example:
+For display math typesetting, type your math expression on a *new line*. For example:
   
     $$
       \bar{y} = {1 \over n} \sum_{i = 1}^{n}y_i

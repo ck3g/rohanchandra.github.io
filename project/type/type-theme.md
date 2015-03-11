@@ -131,16 +131,19 @@ To change your favicon, usually displayed in the browser, place an ICO file name
 [Jeykll docs for writing posts](http://jekyllrb.com/docs/posts/).
 
 ### Math blocks
-Wrap math with `$$` signs in your posts and make sure you have set the `katex` variable in `_config.yml` to `true` for math typesetting.
+Wrap math expressions with `$$` signs in your posts and make sure you have set the `katex` variable in `_config.yml` to `true` for math typesetting.
 
-For example, in your post, add:
+For inline math typesetting, on the *same line* as your content, type your math expression. For example:
+    
+    Type math within a sentence $$2x^2 + x + c$$ to display inline
+    
+For display math typesetting, on a *new line*, type your math expression. For example:
+  
+    $$
+      \bar{y} = {1 \over n} \sum_{i = 1}^{n}y_i
+    $$
 
-	$$
-	  \bar{y} = {1 \over n} \sum_{i = 1}^{n}y_i
-	$$
-
-
-Visit the Kramdown syntax page for more [information on using LaTeX](http://kramdown.gettalong.org/syntax.html#math-blocks). Type Theme makes use for [KaTeX](https://khan.github.io/KaTeX/) for typesetting.
+Type Theme makes use for [KaTeX](https://khan.github.io/KaTeX/) for typesetting.
 
 ### Feature images
 

@@ -84,6 +84,7 @@ Change these variables in `_config.yml`:
 Variable | Example | Description | Optional
 -|-|-|
 header_text | Welcome to my Jekyll blog | HTML (shown below the navigation) with a background colour for emphasis | Yes
+header_text_feature_image | img/sample_feature_img_3.png | Background image for the header text | Yes
 footer_text | Copyright 2014 | HTML (shown at end of the site) with lighter text | Yes
 
 ### Icons
@@ -119,7 +120,17 @@ English text used in the theme (such as the "continue reading" label) has been g
 
 ![A selection of colours set in Type Theme by modifying the CSS](https://cloud.githubusercontent.com/assets/816965/5142488/130869a6-71d7-11e4-8a38-a69ec1673436.png)
 
+Variable | Example | Description | Optional
+-|-|-|
+google_fonts | Playfair+Display:400,700|PT+Sans:400,700,700italic,400italic | [Google Fonts](https://www.google.com/fonts) to load for use | Yes
+
 Navigate to the `_sass > base` directory and open `_variables.scss` to change colours, typography and padding used in the theme with CSS.
+
+Once you have loaded a Google Font in `config.yml`, you can integrate the fonts into your CSS by changing the font-family in `_variables.scss`. For example, after loading the Playfair Display and PT Sans fonts from Google:
+
+    // Typography
+    $font-family-main: 'PT Sans', Helvetica, Arial, sans-serif;
+    $font-family-headings: 'Playfair Display', Helvetica, Arial, sans-serif;
 
 Mozilla's [ColorPicker](https://developer.mozilla.org/en-US/docs/Web/CSS/Tools/ColorPicker_Tool) is a helpful tool to get your preferred colours in hexadecimal or RGBA form for use in `_variables.scss`.
 

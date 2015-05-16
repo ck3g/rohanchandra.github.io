@@ -122,7 +122,7 @@ English text used in the theme (such as the "continue reading" label) has been g
 
 Variable | Example | Description | Optional
 -|-|-|
-google_fonts | "Playfair+Display:400,700|PT+Sans:400,700,700italic,400italic" | [Google Fonts](https://www.google.com/fonts) to load for use | Yes
+google_fonts | "Playfair+Display:400,700\|PT+Sans:400,700,700italic,400italic" | [Google Fonts](https://www.google.com/fonts) to load for use | Yes
 
 Navigate to the `_sass > base` directory and open `_variables.scss` to change colours, typography and padding used in the theme with CSS.
 

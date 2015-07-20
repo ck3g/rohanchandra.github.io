@@ -139,7 +139,7 @@ Mozilla's [ColorPicker](https://developer.mozilla.org/en-US/docs/Web/CSS/Tools/C
 To change your favicon, usually displayed in the browser, place an ICO file named `favicon.ico` in the root directory of your blog.
 
 ## Posts and pages in Type Theme
-[Jeykll docs for writing posts](http://jekyllrb.com/docs/posts/).
+[Jekyll docs for writing posts](http://jekyllrb.com/docs/posts/).
 
 ### Math typesetting
 Wrap math expressions with `$$` signs in your posts and make sure you have set the `katex` variable in `_config.yml` to `true` for math typesetting.
